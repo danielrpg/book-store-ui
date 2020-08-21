@@ -32,6 +32,11 @@ http://localhost:3000/dashboard
 
 ```
 
+![Login Scree](https://github.com/danielrpg/book-store-ui/blob/master/documentation/login_screen.png)
+
+![List of Books](https://github.com/danielrpg/book-store-ui/blob/master/documentation/Screenshot%20from%202020-08-20%2021-25-39.png)
+
+![List of Books](https://github.com/danielrpg/book-store-ui/blob/master/documentation/BookList.png)
 
 ## PROJECT DESCRIPTION
 
