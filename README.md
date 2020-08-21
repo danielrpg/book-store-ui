@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PROJECT NAME
 
-## Available Scripts
+Book Store
 
-In the project directory, you can run:
+## AUTHOR
 
-### `npm start`
+```
+Name: Daniel Fernandez
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Email: daniel.fernandezgp@gmail.com
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## STEPS FOR START PROJECT
+1.- You just need to go in the project path and execute:
 
-### `npm test`
+```
+npm run start
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.- After first step completed it will open an browser with application 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+http://localhost:3000/login
 
-### `npm run eject`
+http://localhost:3000/add-book
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+http://localhost:3000/dashboard
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## PROJECT DESCRIPTION
 
-## Learn More
+```
+Trabajo Final Parte 2 - React
+Descripción
+Una Tienda de libros quiere incrementar sus ventas, para ello la administración dispuso que
+necesita un sistema para registrar los libros que venden, los libros se registran utilizando su
+título, una descripción, el autor y su precio de venta, también es necesario registrar el autor del
+libro.
+Los clientes pueden ingresar al sistema y agregar el libro que deseen a un carrito de compras
+donde el usuario puede registrar su nit y su nombre.
+Utilizando create-react-app cree un proyecto de react para la tienda de libros (las imágenes
+utilizadas de ejemplo pueden variar dependiendo de su implementación):
+- Primeramente la página principal debe mostrar una lista de los libros disponibles en la
+tienda:
+Los libros por lo menos deben tener una imagen, el título, el autor y el precio, no es-
+-
+necesario toda la información de la imagen, pero usted puede agregar personalizar su
+proyecto.
+En otra ruta agregue un formulario para agregar nuevos libros a la lista
+Los usuarios al hacer click en el nombre o la imagen deben ser redireccionados a otra
+página donde se les muestre el detalle del libro:-
+-
+Cuando el usuario haga click en el botón comprar (Buy), éste debe redireccionar a la
+página de pagos donde el comprador llena su información para realizar el pago:
+Una vez los datos son llenados, el sistema debe mostrar un mensaje que se realizó la
+venta correctamente.
+Consideraciones:
+- Para el manejo de rutas utilice react-router
+- Puede utilizar el API que se implementó en la primera parte, o usar una base de datos
+de prueba con json-server.
+- Para realizar la implementación de la lista de libros y agregar un nuevo libro, utilice un
+estado global con redux.
+- Para la página donde se realiza el pago de los libros, utilice hooks y almacene sus
+resultados en un arreglo ‘carts’ dentro de su archivo db.json de pruebas.
+- Agregue validación de tipos a sus componentes
+- Agregue test unitarios donde crea que sea necesario
+- Agregue test e2e para realizar el testing automatizado del proceso de compra (no
+requerido)
+- Para el renderizado de las imágenes usted puede usar servicios como
+https://unsplash.com/​ , ​ https://openlibrary.org/dev/docs/api/covers​ o
+https://archive.org/services/docs/api/​ para colocar imagenes que necesite como portada.-
+Las imágenes provistas en el ejemplo son solo de guía, usted puede utilizar los
+componentes que le prevee la libreria de reactstrap o utilizar alguna librería de su
+preferencia (semantic-ui, material ui, etc.)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
