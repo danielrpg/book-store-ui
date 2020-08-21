@@ -1,47 +1,29 @@
 import React from "react";
-import {
-  Grid,
-  Header,
-  Image,
-  Segment,
-  Form,
-  Button,
-  Message,
-} from "semantic-ui-react";
-import logo from "./images/logo.png";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import { PrivateRoute } from "./components/common/PrivateRoute";
+import { LoginComponent, RegisterComponent } from "./components/auth";
+import { DashboardComponent } from "./components/dashboard/DashboardComponent";
+import { AuthContext } from "./hooks/AuthContext";
+import { AddBookComponent } from "./components/book";
 
-const App = () => (
-  <Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
-    <Grid.Column style={{ maxWidth: 450 }}>
-      <Header as="h2" color="teal" textAlign="center">
-        <Image src={logo} /> Book Store
-      </Header>
-      <Form size="large">
-        <Segment stacked>
-          <Form.Input
-            fluid
-            icon="user"
-            iconPosition="left"
-            placeholder="E-mail address"
-          />
-          <Form.Input
-            fluid
-            icon="lock"
-            iconPosition="left"
-            placeholder="Password"
-            type="password"
-          />
-
-          <Button type="submit" color="teal" fluid size="large">
-            Login
-          </Button>
-        </Segment>
-      </Form>
-      <Message>
-        New to us? <a href="/sigin">Sign Up</a>
-      </Message>
-    </Grid.Column>
-  </Grid>
-);
+const App = () => {
+  return (
+    <AuthContext.Provider>
+      <Router>
+        <Switch>
+          <Route path="/login" component={LoginComponent} />
+          <Route path="/sigin" component={RegisterComponent} />
+          <Route path="/dashboard" component={DashboardComponent} />
+          <Route path="/add-book" component={AddBookComponent} />
+          
+          {/* <PrivateRoute>
+            <DashboardComponent />
+          </PrivateRoute> */}
+        </Switch>
+      </Router>
+    </AuthContext.Provider>
+  );
+};
 
 export default App;
